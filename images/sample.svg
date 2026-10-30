@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+  <rect width="600" height="300" fill="#dbeafe"/>
+  <rect x="2" y="2" width="596" height="296" fill="none" stroke="#2563eb" stroke-width="4" stroke-dasharray="12 8"/>
+  <circle cx="150" cy="150" r="70" fill="#cc342d"/>
+  <polygon points="150,95 190,150 150,205 110,150" fill="#fff" opacity=".85"/>
+  <text x="270" y="140" font-family="sans-serif" font-size="40" font-weight="bold" fill="#1e3a8a">サンプル画像</text>
+  <text x="270" y="190" font-family="sans-serif" font-size="24" fill="#1e3a8a">images/sample.svg</text>
+</svg>

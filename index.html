@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MarkRace - Markdownスライド</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="toolbar">
+  <strong class="brand">MarkRace</strong>
+  <button id="btn-present" class="primary" title="F5">▶ 発表開始</button>
+  <select id="present-mode" title="発表モード">
+    <option value="full">全画面のみ</option>
+    <option value="notes">全画面＋発表者モード</option>
+  </select>
+  <button id="btn-open">開く</button>
+  <button id="btn-save">保存(.md)</button>
+  <button id="btn-sample">サンプル</button>
+  <select id="theme" title="テーマ"></select>
+  <button id="theme-del" title="読み込んだテーマを削除" hidden>🗑</button>
+  <button id="theme-add" title="テーマ(.css)を読み込む">テーマ読込</button>
+  <input type="file" id="theme-file" accept=".css" hidden>
+  <label class="opt" title="スライド下部にうさぎ(進行)とかめ(時間)を表示"><input type="checkbox" id="race-on"> 🐇🐢</label>
+  <label class="opt" title="発表時間。かめがこの時間でゴールします">発表時間 <input type="number" id="race-min" min="1" max="180" value="5"> 分</label>
+  <span class="spacer"></span>
+  <span id="status"></span>
+  <input type="file" id="file" accept=".md,.markdown,.txt" hidden>
+</header>
+
+<main class="editor-layout">
+  <section class="pane">
+    <textarea id="editor" spellcheck="false"></textarea>
+  </section>
+  <section class="pane preview-pane">
+    <div id="preview" class="stage"></div>
+    <div id="notes" class="notes"></div>
+    <div class="nav">
+      <button id="prev">◀</button>
+      <span id="counter"></span>
+      <button id="next">▶</button>
+    </div>
+    <div id="thumbs"></div>
+  </section>
+</main>
+
+<div id="presenter" hidden>
+  <div id="present-stage" class="stage"></div>
+  <div id="race" hidden>
+    <div class="track">
+      <img id="tortoise" class="runner" src="images/tortoise.svg" alt="かめ" title="かめ（経過時間）">
+      <img id="rabbit" class="runner" src="images/rabbit.svg" alt="うさぎ" title="うさぎ（スライドの進行）">
+      <span class="goal">🏁</span>
+    </div>
+  </div>
+  <div id="progress"></div>
+  <div id="page"></div>
+  <div id="fs-hint" hidden>画面をクリック（またはキーを押す）と全画面表示になります</div>
+</div>
+
+<script src="themes/themes.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

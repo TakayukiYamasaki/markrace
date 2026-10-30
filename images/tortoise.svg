@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" width="120" height="80">
+  <g stroke="#5b8f3a" stroke-width="2.5" stroke-linejoin="round">
+    <!-- しっぽ -->
+    <path d="M18 62 L4 66 L18 70 Z" fill="#a5d36f"/>
+    <!-- 足 -->
+    <ellipse cx="34" cy="68" rx="10" ry="9" fill="#a5d36f"/>
+    <ellipse cx="82" cy="68" rx="10" ry="9" fill="#a5d36f"/>
+    <!-- 首と頭 -->
+    <ellipse cx="96" cy="52" rx="12" ry="10" fill="#a5d36f"/>
+    <circle cx="106" cy="44" r="14" fill="#a5d36f"/>
+    <!-- 甲羅 -->
+    <path d="M14 64 Q14 12 58 12 Q102 12 102 64 Z" fill="#6fbf4a" stroke="#3f7a28"/>
+  </g>
+  <!-- 甲羅の模様 -->
+  <g fill="#9bd877" stroke="#3f7a28" stroke-width="2" stroke-linejoin="round">
+    <polygon points="58,24 70,31 70,45 58,52 46,45 46,31"/>
+    <path d="M28 54 L36 46 L46 45 L46 58 L30 62 Z"/>
+    <path d="M88 54 L80 46 L70 45 L70 58 L86 62 Z"/>
+  </g>
+  <path d="M18 64 L98 64" stroke="#3f7a28" stroke-width="3" stroke-linecap="round"/>
+  <!-- ほっぺ -->
+  <circle cx="106" cy="50" r="4.5" fill="#ffb7c5" opacity=".75"/>
+  <!-- 目 -->
+  <circle cx="111" cy="40" r="3.4" fill="#2f3a26"/>
+  <circle cx="112.1" cy="38.9" r="1.2" fill="#fff"/>
+  <!-- 口 -->
+  <path d="M112 49 Q109 53 104 51" fill="none" stroke="#5b8f3a" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,9 @@
+/* テーマ: Rabbit風 */
+.theme-rabbit {
+  --bg: #fffdf5;
+  --fg: #333333;
+  --accent: #cc342d;
+  --code-bg: #f6ecd9;
+}
+/* 色以外も、普通の CSS で自由に変えられます（任意） */
+.theme-rabbit .slide h1 { border-bottom-style: double; }
